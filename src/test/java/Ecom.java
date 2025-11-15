@@ -26,8 +26,7 @@ public class Ecom {
     @Test
     public void add_to_cart() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        WebElement button=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[normalize-space()='ADIDAS ORIGINAL']/ancestor::div[contains(@class,'card-body')]//button[contains(.,'Add To Cart')]")));
-        button.click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[normalize-space()='ADIDAS ORIGINAL']/ancestor::div[contains(@class,'card-body')]//button[contains(.,'Add To Cart')]"))).click();
 
     }
 }
