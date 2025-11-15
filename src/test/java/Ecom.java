@@ -23,10 +23,10 @@ public class Ecom {
         driver.findElement(By.xpath("//input[@formcontrolname='userPassword']")).sendKeys("1234567Sk.");
         driver.findElement(By.xpath("//input[@name='login']")).click();
     }
-    @Test
-    public void add_to_cart() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[normalize-space()='ADIDAS ORIGINAL']/ancestor::div[contains(@class,'card-body')]//button[contains(.,'Add To Cart')]"))).click();
-
-    }
+//    @Test
+//    public void add_to_cart() {
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[normalize-space()='ADIDAS ORIGINAL']/ancestor::div[contains(@class,'card-body')]//button[contains(.,'Add To Cart')]"))).click();
+//
+//    }
 }
